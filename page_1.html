@@ -1,0 +1,21 @@
+  <header>
+    <h1>Данные о пользователе</h1>
+  </header>
+  <main>
+    <section class="form">
+      <div ng-controller="firstCtrl as firstCtrl">
+        <div>
+          <label for="name">Имя: </label>
+          <input type="text" id="name" name="name" placeholder="Введите имя" ng-model="firstCtrl.name">
+          <p>{{firstCtrl.name}}</p>
+          <label for="surname">Фамилия: </label>
+          <input type="text" id="surname" name="surname" placeholder="Введите фамилию" ng-model="firstCtrl.surname">
+          <p>{{firstCtrl.surname}}</p>
+        </div>
+        <div>
+            <a href="#!/page_2"><button ng-click="firstCtrl.addInfo(name)">Next</button></a>
+        </div>
+      
+      </div>
+    </section>
+  </main>
